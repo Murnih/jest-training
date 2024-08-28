@@ -5,7 +5,6 @@ describe("Math functions", () => {
         expect(math.RumusPenambahan(1, 2)).toEqual(3);
     });
 
-    
     it("should minus two numbers correctly", () => {
       expect(math.RumusPengurangan(8, 5)).toEqual(3);
     });
@@ -18,6 +17,7 @@ describe("Math functions", () => {
       expect(math.RumusPerkalian(7, 8)).toEqual(56);
     });
 
+    // Contoh
 });
 
 
