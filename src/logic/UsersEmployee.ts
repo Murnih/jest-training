@@ -11,6 +11,3 @@ export async function getId() {
 export async function getEmployee_age(p0: (sum: any, employee_age: any) => any, p1: number, ages: number[]) {
   return await axios.get('https://dummy.restapiexample.com/api/v1/employees');
 }
-
-
-
