@@ -1,6 +1,6 @@
-
 import { isObjectLiteralElement } from "typescript";
 import {getEmployee_age, getId} from "./logic/UsersEmployee";
+import { PORT } from "./server";
 
 it('returns the title of the first album', async () => {
   const response = await getId(); //kenapa menggunakan await? karena methodenya menggunakan async.
@@ -21,10 +21,12 @@ it('returns the title of the first album', async () => {
     }
   });
 
-  console.log("kaka hasilya: ",count)
+  console.log("Hasil Count empty profile image : ",count)
   
   return average;
-});
+}, 10000);
+//app.listen(PORT, (): void => console.log(`running on port ${PORT}`));
+Users.listen(PORT, (): void => console.log(`running on port ${PORT}`));
 
 
 
